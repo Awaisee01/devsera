@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="footer-section">
             <div className="text-2xl font-light mb-6">
-              Phenomenon <span className="text-terracotta">Studio</span>
+              Dev<span className="text-terracotta">sera</span>
             </div>
             <p className="text-gray-400 mb-6">
               Digital product design and development agency empowering startups to scale faster.
@@ -140,7 +140,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm" data-testid="footer-copyright">
-            © 2024 Phenomenon Studio. All rights reserved.
+            © 2024 Devsera. All rights reserved.
           </div>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a 

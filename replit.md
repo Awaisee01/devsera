@@ -1,6 +1,6 @@
 # Overview
 
-This is a React-based digital agency website for Phenomenon Studio, built with a full-stack architecture using Express.js backend and React frontend. The application serves as a marketing website showcasing the agency's services, projects, team, and technology stack, with a contact form functionality for lead generation.
+This is a React-based digital agency website for Devsera, built with a full-stack architecture using Express.js backend and React frontend. The application serves as a marketing website showcasing the agency's services, projects, team, and technology stack, with a contact form functionality for lead generation.
 
 The project emphasizes a warm, minimalist design system with organic sophistication, featuring custom color palettes (terracotta, sage, amber) and modern UI components. The application is designed to help startups and businesses understand the agency's capabilities and initiate contact for potential projects.
 

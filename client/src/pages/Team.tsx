@@ -59,110 +59,120 @@ export default function Team() {
         </div>
       </section>
 
-      {/* Team Grid */}
-      <section className="py-20 px-6 bg-white" ref={teamRef}>
-        <div className="max-w-6xl mx-auto">
+   <section className="py-32 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-24"
+            ref={teamRef}
             initial={{ opacity: 0, y: 30 }}
             animate={teamInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl font-light text-text-primary mb-4">
-              Our <span className="text-terracotta">People</span>
-            </h2>
-            <p className="text-xl text-text-secondary">Meet the experts who bring your vision to life</p>
+            <div className="inline-block">
+              <h2 className="text-6xl font-thin text-gray-900 mb-3 tracking-tight">
+                Our Team
+              </h2>
+              <div className="w-16 h-1 bg-terracotta mx-auto rounded-full"></div>
+            </div>
           </motion.div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+          {/* Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
             {teamMembers.map((member, index) => (
-              <motion.div 
+              <motion.div
                 key={member.id}
-                className="team-member"
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={teamInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                data-testid={`team-member-${member.id}`}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group"
               >
-                <img 
-                  src={member.image} 
-                  alt={member.name}
-                  className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
-                  data-testid={`team-member-image-${member.id}`}
-                />
-                
-                <h3 className="text-lg font-medium text-text-primary mb-1" data-testid={`team-member-name-${member.id}`}>
-                  {member.name}
-                </h3>
-                
-                <p className="text-text-secondary text-sm mb-2" data-testid={`team-member-role-${member.id}`}>
-                  {member.role}
-                </p>
-                
-                <div className="flex items-center justify-center gap-1 mb-4">
-                  <MapPin className="w-3 h-3 text-text-secondary" />
-                  <span className="text-text-secondary text-xs" data-testid={`team-member-location-${member.id}`}>
-                    {member.location}
-                  </span>
-                </div>
-                
-                <p className="text-text-secondary text-sm mb-4 text-center" data-testid={`team-member-bio-${member.id}`}>
-                  {member.bio}
-                </p>
-                
-                {member.skills && (
-                  <div className="mb-4">
-                    <div className="flex flex-wrap gap-1 justify-center">
-                      {member.skills.slice(0, 3).map((skill, skillIndex) => (
-                        <span 
-                          key={skillIndex}
-                          className="bg-muted text-text-primary px-2 py-1 rounded-full text-xs"
-                          data-testid={`team-member-skill-${member.id}-${skillIndex}`}
-                        >
-                          {skill}
-                        </span>
-                      ))}
+                <div className="text-center">
+                  
+                  {/* Profile Image */}
+                  <div className="relative mb-8 inline-block">
+                    <div className="w-32 h-32 mx-auto mb-6 relative overflow-hidden rounded-3xl">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                      />
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                     </div>
                   </div>
-                )}
-                
-                <div className="flex justify-center gap-3">
-                  {member.linkedin && (
-                    <a 
-                      href={member.linkedin} 
-                      className="text-premium hover:text-terracotta transition-colors duration-200"
-                      data-testid={`team-member-linkedin-${member.id}`}
-                    >
-                      <Linkedin className="w-4 h-4" />
-                    </a>
-                  )}
-                  {member.github && (
-                    <a 
-                      href={member.github} 
-                      className="text-premium hover:text-terracotta transition-colors duration-200"
-                      data-testid={`team-member-github-${member.id}`}
-                    >
-                      <Github className="w-4 h-4" />
-                    </a>
-                  )}
-                  {member.dribbble && (
-                    <a 
-                      href={member.dribbble} 
-                      className="text-premium hover:text-terracotta transition-colors duration-200"
-                      data-testid={`team-member-dribbble-${member.id}`}
-                    >
-                      <Dribbble className="w-4 h-4" />
-                    </a>
-                  )}
-                  {member.email && (
-                    <a 
-                      href={`mailto:${member.email}`} 
-                      className="text-premium hover:text-terracotta transition-colors duration-200"
-                      data-testid={`team-member-email-${member.id}`}
-                    >
-                      <Mail className="w-4 h-4" />
-                    </a>
-                  )}
+
+                  {/* Content */}
+                  <div className="space-y-4">
+                    
+                    {/* Name */}
+                    <h3 className="text-2xl font-light text-gray-900 tracking-tight">
+                      {member.name}
+                    </h3>
+                    
+                    {/* Role */}
+                    <p className="text-terracotta font-medium text-sm uppercase tracking-[0.2em]">
+                      {member.role}
+                    </p>
+
+                    {/* Location */}
+                    <div className="flex items-center justify-center gap-2 text-gray-400">
+                      <MapPin className="w-4 h-4" />
+                      <span className="text-sm">{member.location}</span>
+                    </div>
+
+                    {/* Bio */}
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">{member.bio}</p>
+
+                    {/* Skills */}
+                    {member.skills && (
+                      <div className="flex flex-wrap gap-2 justify-center pt-2">
+                        {member.skills.slice(0, 3).map((skill, i) => (
+                          <span
+                            key={i}
+                            className="text-xs text-gray-500 bg-gray-50 px-3 py-1.5 rounded-full font-medium"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* Socials */}
+                    <div className="flex justify-center gap-6 pt-4">
+                      {member.linkedin && (
+                        <a 
+                          href={member.linkedin} 
+                          className="text-gray-300 hover:text-blue-500 transition-colors duration-300"
+                        >
+                          <Linkedin className="w-5 h-5" />
+                        </a>
+                      )}
+                      {member.github && (
+                        <a 
+                          href={member.github} 
+                          className="text-gray-300 hover:text-gray-600 transition-colors duration-300"
+                        >
+                          <Github className="w-5 h-5" />
+                        </a>
+                      )}
+                      {member.dribbble && (
+                        <a 
+                          href={member.dribbble} 
+                          className="text-gray-300 hover:text-pink-500 transition-colors duration-300"
+                        >
+                          <Dribbble className="w-5 h-5" />
+                        </a>
+                      )}
+                      {member.email && (
+                        <a 
+                          href={`mailto:${member.email}`} 
+                          className="text-gray-300 hover:text-terracotta transition-colors duration-300"
+                        >
+                          <Mail className="w-5 h-5" />
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -208,7 +218,7 @@ export default function Team() {
               </div>
               
               <Link href="/contact">
-                <Button className="btn-primary" data-testid="team-cta">
+                <Button className="btn-primary mt-3" data-testid="team-cta">
                   <Users className="w-4 h-4 mr-2" />
                   Work With Our Team
                 </Button>

@@ -30,7 +30,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <Link href="/projects">
-                <Button className="btn-secondary" data-testid="hero-cta-secondary">
+                <Button className="btn-primary" data-testid="hero-cta-secondary">
                   <Play className="w-4 h-4 mr-2" />
                   View Our Work
                 </Button>

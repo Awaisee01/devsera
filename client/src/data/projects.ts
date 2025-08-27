@@ -157,7 +157,7 @@ export const projects: Project[] = [
     id: "healthtech-platform",
     title: "MedConnect Pro",
     description: "HIPAA-compliant telemedicine platform connecting patients with specialists, featuring AI-powered diagnosis assistance.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
+    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
     tags: ["Healthcare", "AI"],
     results: [
       "HIPAA compliance certification",

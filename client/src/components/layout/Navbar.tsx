@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <Link href="/">
           <div className="text-2xl font-light text-text-primary cursor-pointer">
-            Phenomenon <span className="text-terracotta">Studio</span>
+            Dev<span className="text-terracotta">sera</span>
           </div>
         </Link>
         
@@ -53,12 +53,7 @@ export default function Navbar() {
           ))}
         </div>
         
-        <Link href="/contact">
-          <Button className="btn-primary hidden md:block" data-testid="nav-cta-button">
-            <Rocket className="w-4 h-4 mr-2" />
-            Let's Talk
-          </Button>
-        </Link>
+       
         
         {/* Mobile Menu */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -83,16 +78,7 @@ export default function Navbar() {
                   </a>
                 </Link>
               ))}
-              <Link href="/contact">
-                <Button 
-                  className="btn-primary w-full mt-8" 
-                  onClick={() => setIsOpen(false)}
-                  data-testid="mobile-nav-cta-button"
-                >
-                  <Rocket className="w-4 h-4 mr-2" />
-                  Let's Talk
-                </Button>
-              </Link>
+             
             </div>
           </SheetContent>
         </Sheet>

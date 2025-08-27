@@ -98,7 +98,7 @@ export default function Contact() {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email", 
-      content: "hello@phenomenonstudio.com",
+      content: "hello@devsera.com",
       bgColor: "bg-amber"
     },
     {

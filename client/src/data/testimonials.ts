@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
     id: "john-doe",
     name: "John Doe",
     title: "CEO, KlickEx",
-    content: "Phenomenon Studio delivered exceptional results. The redesign boosted our conversion rate by 35% and the team's expertise in fintech was evident throughout the project.",
+    content: "Devsera delivered exceptional results. The redesign boosted our conversion rate by 35% and the team's expertise in fintech was evident throughout the project.",
     avatarBg: "bg-terracotta",
     initials: "JD"
   },
@@ -36,7 +36,7 @@ export const testimonials: Testimonial[] = [
     id: "michelle-chang",
     name: "Michelle Chang",
     title: "Product Director, Nomupay",
-    content: "Phenomenon Studio transformed our vision into reality. The €35.9M funding round success was partly due to the incredible product experience they helped us build.",
+    content: "Devsera transformed our vision into reality. The €35.9M funding round success was partly due to the incredible product experience they helped us build.",
     avatarBg: "bg-premium",
     initials: "MC"
   },

@@ -23,7 +23,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["User Research", "Figma", "Prototyping"],
     linkedin: "https://linkedin.com/in/alexchen",
     dribbble: "https://dribbble.com/alexchen",
-    email: "alex@phenomenonstudio.com"
+    email: "alex@devsera.com"
   },
   {
     id: "sarah-rodriguez",
@@ -35,7 +35,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["React", "Node.js", "AWS"],
     linkedin: "https://linkedin.com/in/sarahrodriguez",
     github: "https://github.com/sarahrodriguez",
-    email: "sarah@phenomenonstudio.com"
+    email: "sarah@devsera.com"
   },
   {
     id: "michael-kim",
@@ -46,7 +46,7 @@ export const teamMembers: TeamMember[] = [
     location: "San Francisco, USA",
     skills: ["Product Strategy", "Analytics", "Growth"],
     linkedin: "https://linkedin.com/in/michaelkim",
-    email: "michael@phenomenonstudio.com"
+    email: "michael@devsera.com"
   },
   {
     id: "emma-thompson",
@@ -58,7 +58,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["UI Design", "Design Systems", "Accessibility"],
     linkedin: "https://linkedin.com/in/emmathompson",
     dribbble: "https://dribbble.com/emmathompson",
-    email: "emma@phenomenonstudio.com"
+    email: "emma@devsera.com"
   },
   {
     id: "dmitri-petrov",
@@ -70,7 +70,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["Python", "Microservices", "PostgreSQL"],
     linkedin: "https://linkedin.com/in/dmitripetrov",
     github: "https://github.com/dmitripetrov",
-    email: "dmitri@phenomenonstudio.com"
+    email: "dmitri@devsera.com"
   },
   {
     id: "maria-garcia",
@@ -81,7 +81,7 @@ export const teamMembers: TeamMember[] = [
     location: "Barcelona, Spain",
     skills: ["User Research", "Data Analysis", "Survey Design"],
     linkedin: "https://linkedin.com/in/mariagarcia",
-    email: "maria@phenomenonstudio.com"
+    email: "maria@devsera.com"
   },
   {
     id: "james-wilson",
@@ -93,7 +93,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["React", "TypeScript", "Animation"],
     linkedin: "https://linkedin.com/in/jameswilson",
     github: "https://github.com/jameswilson",
-    email: "james@phenomenonstudio.com"
+    email: "james@devsera.com"
   },
   {
     id: "anna-kowalski",
@@ -105,7 +105,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["AWS", "Docker", "Kubernetes"],
     linkedin: "https://linkedin.com/in/annakowalski",
     github: "https://github.com/annakowalski",
-    email: "anna@phenomenonstudio.com"
+    email: "anna@devsera.com"
   },
   {
     id: "lars-eriksson",
@@ -117,7 +117,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["React Native", "Flutter", "iOS"],
     linkedin: "https://linkedin.com/in/larseriksson",
     github: "https://github.com/larseriksson",
-    email: "lars@phenomenonstudio.com"
+    email: "lars@devsera.com"
   },
   {
     id: "priya-patel",
@@ -129,7 +129,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["Python", "TensorFlow", "Data Science"],
     linkedin: "https://linkedin.com/in/priyapatel",
     github: "https://github.com/priyapatel",
-    email: "priya@phenomenonstudio.com"
+    email: "priya@devsera.com"
   },
   {
     id: "thomas-mueller",
@@ -140,7 +140,7 @@ export const teamMembers: TeamMember[] = [
     location: "Berlin, Germany",
     skills: ["Test Automation", "Selenium", "Quality Assurance"],
     linkedin: "https://linkedin.com/in/thomasmueller",
-    email: "thomas@phenomenonstudio.com"
+    email: "thomas@devsera.com"
   },
   {
     id: "sophie-martin",
@@ -152,7 +152,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["Brand Design", "Illustration", "Typography"],
     linkedin: "https://linkedin.com/in/sophiemartin",
     dribbble: "https://dribbble.com/sophiemartin",
-    email: "sophie@phenomenonstudio.com"
+    email: "sophie@devsera.com"
   },
   {
     id: "rahul-sharma",
@@ -164,7 +164,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["Solidity", "Web3", "DeFi"],
     linkedin: "https://linkedin.com/in/rahulsharma",
     github: "https://github.com/rahulsharma",
-    email: "rahul@phenomenonstudio.com"
+    email: "rahul@devsera.com"
   },
   {
     id: "olivia-johnson",
@@ -175,7 +175,7 @@ export const teamMembers: TeamMember[] = [
     location: "Vancouver, Canada",
     skills: ["Content Strategy", "Copywriting", "SEO"],
     linkedin: "https://linkedin.com/in/oliviajohnson",
-    email: "olivia@phenomenonstudio.com"
+    email: "olivia@devsera.com"
   },
   {
     id: "carlos-rodriguez",
@@ -187,7 +187,7 @@ export const teamMembers: TeamMember[] = [
     skills: ["Python", "Apache Spark", "Data Warehousing"],
     linkedin: "https://linkedin.com/in/carlosrodriguez",
     github: "https://github.com/carlosrodriguez",
-    email: "carlos@phenomenonstudio.com"
+    email: "carlos@devsera.com"
   },
   {
     id: "elena-popov",
@@ -198,6 +198,6 @@ export const teamMembers: TeamMember[] = [
     location: "Tallinn, Estonia",
     skills: ["Cybersecurity", "Penetration Testing", "Compliance"],
     linkedin: "https://linkedin.com/in/elenapopov",
-    email: "elena@phenomenonstudio.com"
+    email: "elena@devsera.com"
   }
 ];

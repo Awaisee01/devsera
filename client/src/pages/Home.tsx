@@ -96,7 +96,7 @@ export default function Home() {
                 ))}
               </div>
               <Link href="/team">
-                <Button className="btn-primary" data-testid="about-cta-button">
+                <Button className="btn-primary mt-4" data-testid="about-cta-button">
                   <Users className="w-4 h-4 mr-2" />
                   Meet Our Team
                 </Button>
@@ -242,7 +242,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 1.8 }}
           >
             <Link href="/projects">
-              <Button className="btn-secondary" data-testid="view-all-projects-button">
+              <Button className="btn-primary" data-testid="view-all-projects-button">
                 <ArrowRight className="w-4 h-4 mr-2" />
                 View All 30+ Projects
               </Button>
